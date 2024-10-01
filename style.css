@@ -1,36 +1,41 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Sayfanın tamamını kaplamak için */
+    background-color: #000; /* Arka plan rengi */
 }
 
 .container {
-    position: relative;
-    width: 100%;
-    max-width: 800px; /* Resmin genişliğine göre ayarla */
-    margin: auto;
+    position: relative; /* Çocuk öğelerin konumlandırılması için */
 }
 
 .overlay {
-    width: 100%;
-    height: auto;
+    width: 800px; /* Resmin genişliği */
+    height: auto; /* Orantılı yükseklik */
 }
 
 .text {
-    position: absolute;
-    top: 30%; /* Üstten uzaklık */
-    left: 5%; /* Soldan uzaklık */
-    color: orange; /* Yazı rengi */
-    font-size: 24px; /* Yazı boyutu */
-    text-align: left;
+    position: absolute; /* Konumlandırma için */
+    top: 50%; /* Dikey merkezleme */
+    left: 50%; /* Yatay merkezleme */
+    transform: translate(-50%, -50%); /* Tam merkezleme */
+    color: white; /* Yazı rengi */
+    text-align: center; /* Ortalı yazı */
+    z-index: 1; /* Diğer öğelerin üstünde görünmesi için */
+}
+
+.text h2 {
+    margin: 10px 0; /* Başlık için üst ve alt boşluk */
 }
 
 .text ul {
-    list-style-type: none;
-    padding: 0;
+    list-style-type: none; /* Liste işaretlerini kaldır */
+    padding: 0; /* Padding'i kaldır */
 }
 
 .text li {
-    margin: 10px 0;
-    font-weight: bold; /* Şıkları kalın yap */
+    margin: 5px 0; /* Her şıkkın altına boşluk ekle */
 }
