@@ -4,52 +4,58 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Sayfanın tamamını kaplamak için */
+    height: 100vh;
     background-color: #000; /* Arka plan rengi */
 }
 
 .container {
-    position: relative; /* Çocuk öğelerin konumlandırılması için */
+    position: relative;
 }
 
 .overlay {
-    width: 800px; /* Resmin genişliği */
+    width: 100%; /* Resmi tam genişlikte göster */
     height: auto; /* Orantılı yükseklik */
 }
 
 .text {
-    position: absolute; /* Konumlandırma için */
-    top: 340px; /* Y için 340px */
-    left: 730px; /* X için 730px */
-    transform: translate(-50%, -50%); /* Tam merkezleme */
+    position: absolute;
+    top: 730px; /* Soru kısmı için konum */
+    left: 4600px; /* Soru kısmı için konum */
     color: white; /* Yazı rengi */
-    text-align: center; /* Ortalı yazı */
-    z-index: 1; /* Diğer öğelerin üstünde görünmesi için */
+    font-size: 36px; /* Yazı boyutu */
+    text-align: center;
 }
 
 .option {
-    position: absolute; /* Konumlandırma için */
-    color: white; /* Yazı rengi */
-    z-index: 1; /* Diğer öğelerin üstünde görünmesi için */
+    position: absolute;
+    background-color: blue; /* Şık arka plan rengi */
+    color: orange; /* Şık yazı rengi */
+    font-size: 24px; /* Şık yazı boyutu */
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s; /* Renk geçişi için animasyon */
 }
 
-/* Her bir şıkkın konumları */
 .optionA {
-    left: 839px; /* A Şıkkı X */
-    top: 1068px; /* A Şıkkı Y */
+    left: 1456px; /* A Şıkkı X */
+    top: 1783px; /* A Şıkkı Y */
 }
 
 .optionB {
-    left: 3100px; /* B Şıkkı X */
-    top: 1068px; /* B Şıkkı Y */
+    left: 5361px; /* B Şıkkı X */
+    top: 2883px; /* B Şıkkı Y */
 }
 
 .optionC {
-    left: 839px; /* C Şıkkı X */
-    top: 1592px; /* C Şıkkı Y */
+    left: 1456px; /* C Şıkkı X */
+    top: 1783px; /* C Şıkkı Y */
 }
 
 .optionD {
-    left: 3100px; /* D Şıkkı X */
-    top: 1592px; /* D Şıkkı Y */
+    left: 5361px; /* D Şıkkı X */
+    top: 2883px; /* D Şıkkı Y */
+}
+
+.option:hover {
+    background-color: lightblue; /* Üzerine gelindiğinde arka plan rengi */
 }

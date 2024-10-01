@@ -1,16 +1,13 @@
-// Örnek kullanım: Şıkları kontrol et
-function highlightOption(option) {
-    const options = ['optionA', 'optionB', 'optionC', 'optionD'];
-    const correctAnswer = 'optionB'; // Doğru cevap için örnek
-    options.forEach(opt => {
-        const element = document.getElementById(opt);
-        if (opt === correctAnswer) {
-            element.style.color = 'green'; // Doğru şık yeşil
-        } else {
-            element.style.color = 'red'; // Yanlış şık kırmızı
-        }
-    });
-}
+document.querySelectorAll('.option').forEach(option => {
+    option.addEventListener('click', () => {
+        // Seçilen seçeneğin yeşil olmasını sağlar
+        option.style.backgroundColor = 'green';
 
-// Bu fonksiyonu istediğin bir yerden çağırabilirsin
-highlightOption();
+        // Diğer seçeneklerin kırmızı olmasını sağlar
+        document.querySelectorAll('.option').forEach(otherOption => {
+            if (otherOption !== option) {
+                otherOption.style.backgroundColor = 'red';
+            }
+        });
+    });
+});
