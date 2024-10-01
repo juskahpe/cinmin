@@ -1,28 +1,36 @@
-/* Varsayılan şık stili */
-#choices button {
-  font-size: 24px;
-  padding: 10px 20px;
-  color: white;
-  background-color: black; /* Başlangıçta tüm şıklar siyah */
-  border: none;
-  margin: 10px;
-  cursor: pointer;
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
 }
 
-/* Seçilen şık sarı olacak */
-.selected {
-  background-color: yellow;
-  color: black;
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 800px; /* Resmin genişliğine göre ayarla */
+    margin: auto;
 }
 
-/* Doğru şık yeşil olacak */
-.correct {
-  background-color: green;
-  color: white;
+.overlay {
+    width: 100%;
+    height: auto;
 }
 
-/* Yanlış şık kırmızı olacak */
-.wrong {
-  background-color: red;
-  color: white;
+.text {
+    position: absolute;
+    top: 30%; /* Üstten uzaklık */
+    left: 5%; /* Soldan uzaklık */
+    color: orange; /* Yazı rengi */
+    font-size: 24px; /* Yazı boyutu */
+    text-align: left;
+}
+
+.text ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.text li {
+    margin: 10px 0;
+    font-weight: bold; /* Şıkları kalın yap */
 }
