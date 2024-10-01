@@ -19,23 +19,37 @@ body {
 
 .text {
     position: absolute; /* Konumlandırma için */
-    top: 50%; /* Dikey merkezleme */
-    left: 50%; /* Yatay merkezleme */
+    top: 340px; /* Y için 340px */
+    left: 730px; /* X için 730px */
     transform: translate(-50%, -50%); /* Tam merkezleme */
     color: white; /* Yazı rengi */
     text-align: center; /* Ortalı yazı */
     z-index: 1; /* Diğer öğelerin üstünde görünmesi için */
 }
 
-.text h2 {
-    margin: 10px 0; /* Başlık için üst ve alt boşluk */
+.option {
+    position: absolute; /* Konumlandırma için */
+    color: white; /* Yazı rengi */
+    z-index: 1; /* Diğer öğelerin üstünde görünmesi için */
 }
 
-.text ul {
-    list-style-type: none; /* Liste işaretlerini kaldır */
-    padding: 0; /* Padding'i kaldır */
+/* Her bir şıkkın konumları */
+.optionA {
+    left: 839px; /* A Şıkkı X */
+    top: 1068px; /* A Şıkkı Y */
 }
 
-.text li {
-    margin: 5px 0; /* Her şıkkın altına boşluk ekle */
+.optionB {
+    left: 3100px; /* B Şıkkı X */
+    top: 1068px; /* B Şıkkı Y */
+}
+
+.optionC {
+    left: 839px; /* C Şıkkı X */
+    top: 1592px; /* C Şıkkı Y */
+}
+
+.optionD {
+    left: 3100px; /* D Şıkkı X */
+    top: 1592px; /* D Şıkkı Y */
 }
