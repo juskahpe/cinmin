@@ -19,8 +19,8 @@ body {
 
 .text {
     position: absolute;
-    top: 730px; /* Soru kısmı için konum */
-    left: 4600px; /* Soru kısmı için konum */
+    top: 340px; /* Soru kısmı için güncel konum */
+    left: 730px; /* Soru kısmı için güncel konum */
     color: white; /* Yazı rengi */
     font-size: 36px; /* Yazı boyutu */
     text-align: center;
@@ -37,23 +37,23 @@ body {
 }
 
 .optionA {
-    left: 1456px; /* A Şıkkı X */
-    top: 1783px; /* A Şıkkı Y */
+    left: 839px; /* A Şıkkı X */
+    top: 1068px; /* A Şıkkı Y */
 }
 
 .optionB {
-    left: 5361px; /* B Şıkkı X */
-    top: 2883px; /* B Şıkkı Y */
+    left: 3100px; /* B Şıkkı X */
+    top: 1068px; /* B Şıkkı Y */
 }
 
 .optionC {
-    left: 1456px; /* C Şıkkı X */
-    top: 1783px; /* C Şıkkı Y */
+    left: 839px; /* C Şıkkı X */
+    top: 1592px; /* C Şıkkı Y */
 }
 
 .optionD {
-    left: 5361px; /* D Şıkkı X */
-    top: 2883px; /* D Şıkkı Y */
+    left: 3100px; /* D Şıkkı X */
+    top: 1592px; /* D Şıkkı Y */
 }
 
 .option:hover {
