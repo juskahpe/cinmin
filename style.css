@@ -19,41 +19,44 @@ body {
 
 .text {
     position: absolute;
-    top: 340px; /* Soru kısmı için güncel konum */
-    left: 730px; /* Soru kısmı için güncel konum */
+    top: 5%; /* Soru kısmı için yukarı kaydırma */
+    left: 50%; /* Ortada hizalama */
+    transform: translateX(-50%); /* Ortada görünmesi için ayar */
     color: white; /* Yazı rengi */
-    font-size: 36px; /* Yazı boyutu */
+    font-size: 4vw; /* Yazı boyutu, ekran genişliğine göre ayarlanır */
     text-align: center;
 }
 
 .option {
     position: absolute;
-    background-color: blue; /* Şık arka plan rengi */
-    color: orange; /* Şık yazı rengi */
-    font-size: 24px; /* Şık yazı boyutu */
-    padding: 10px;
+    background-color: red; /* Şık arka plan rengi */
+    color: yellow; /* Şık yazı rengi */
+    font-size: 3vw; /* Şık yazı boyutu, ekran genişliğine göre ayarlanır */
+    padding: 1.5vw; /* Padding, ekran genişliğine göre ayarlanır */
     border-radius: 5px;
     transition: background-color 0.3s; /* Renk geçişi için animasyon */
 }
 
 .optionA {
-    left: 839px; /* A Şıkkı X */
-    top: 1068px; /* A Şıkkı Y */
+    left: 12%; /* A Şıkkı için sağa kaydırma */
+    top: 35%; /* A Şıkkı için yukarı kaydırma */
 }
 
 .optionB {
-    left: 3100px; /* B Şıkkı X */
-    top: 1068px; /* B Şıkkı Y */
+    left: 50%; /* B Şıkkı için sağa kaydırma */
+    top: 35%; /* B Şıkkı için yukarı kaydırma */
+    transform: translateX(-50%); /* B Şıkkı ortalamak için */
 }
 
 .optionC {
-    left: 839px; /* C Şıkkı X */
-    top: 1592px; /* C Şıkkı Y */
+    left: 12%; /* C Şıkkı için sağa kaydırma */
+    top: 65%; /* C Şıkkı için yukarı kaydırma */
 }
 
 .optionD {
-    left: 3100px; /* D Şıkkı X */
-    top: 1592px; /* D Şıkkı Y */
+    left: 50%; /* D Şıkkı için sağa kaydırma */
+    top: 65%; /* D Şıkkı için yukarı kaydırma */
+    transform: translateX(-50%); /* D Şıkkı ortalamak için */
 }
 
 .option:hover {
