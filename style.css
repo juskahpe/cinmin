@@ -1,0 +1,28 @@
+/* Varsayılan şık stili */
+#choices button {
+  font-size: 24px;
+  padding: 10px 20px;
+  color: white;
+  background-color: black; /* Başlangıçta tüm şıklar siyah */
+  border: none;
+  margin: 10px;
+  cursor: pointer;
+}
+
+/* Seçilen şık sarı olacak */
+.selected {
+  background-color: yellow;
+  color: black;
+}
+
+/* Doğru şık yeşil olacak */
+.correct {
+  background-color: green;
+  color: white;
+}
+
+/* Yanlış şık kırmızı olacak */
+.wrong {
+  background-color: red;
+  color: white;
+}
